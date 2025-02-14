@@ -1,0 +1,28 @@
+.movie-slider{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scrollbar-width: none;
+    padding: 1rem;
+}
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.movie-card-img img{
+    border-radius: 8px;
+    position: relative;
+    width: 200px;
+    box-shadow: rgb(184, 186, 184) 0 0 5px;
+    transition: 0.3s;
+}
+.movie-card-img img:hover{
+transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .movie-card-img img{
+        width: 150px;
+    }
+}

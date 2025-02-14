@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  background: rgba(0, 0, 0, 0.921);
+  background: url(./assets/bg.png);
+  background-size: 100% 100%;
+  background-position: center;
+  overflow-x: hidden;
+  color: white;
+}
+.gradient-text {
+  font-size: 3rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #ff6a00); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text color transparent */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.gradient-text:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+hr{
+  filter: brightness(0.5);
+}

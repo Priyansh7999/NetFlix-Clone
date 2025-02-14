@@ -1,0 +1,114 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px; /* Adjusted padding for mobile */
+  flex-wrap: wrap;
+  height: auto; /* Allow height to adjust dynamically */
+}
+
+.footer .logo img {
+  width: 120px; /* Slightly smaller for mobile */
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-contact-us,
+.footer-social {
+  flex: 1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.footer-links p,
+.footer-contact-us p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px; /* Slightly larger for readability */
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+  margin: 5px 0;
+}
+
+.footer-links a,
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #f00;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-social a {
+  width: 40px; /* Slightly larger for touchscreens */
+  height: 40px;
+  background: #fff;
+  color: #111;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #f00;
+  color: #fff;
+}
+
+.copyright {
+  background: #000;
+  color: #888;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px; /* Reduced padding for smaller screens */
+  }
+
+  .footer .logo img {
+    width: 100px; /* Adjusted size for mobile */
+    margin-bottom: 15px;
+  }
+
+  .footer-links,
+  .footer-contact-us,
+  .footer-social {
+    margin: 15px 0;
+  }
+
+  .footer-social ul {
+    gap: 5px; /* Reduced gap for icons on smaller screens */
+  }
+
+  .footer-social a {
+    width: 35px; /* Smaller icons for mobile */
+    height: 35px;
+  }
+}

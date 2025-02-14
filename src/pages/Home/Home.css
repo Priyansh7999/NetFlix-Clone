@@ -1,0 +1,29 @@
+.home{
+    overflow: hidden;
+    margin-top: -60px;
+}
+.Main-Container{
+    margin: 10px 10px ;
+}
+.Container{
+    position: relative;
+    padding: 20px;
+}
+.Container h1{
+    width: fit-content;
+    transition: .2s;
+    margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .Main-Container{
+        margin: 0 ;
+    }
+    .Container{
+        padding: 10px 0;
+    }
+    .Container h1{
+        margin: 0 10px;
+        font-size: 22px;
+    }
+}

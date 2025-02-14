@@ -1,0 +1,82 @@
+.season-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text */
+    border-radius: 8px;
+  }
+  
+  .season-details h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .season-select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .season-select label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .season-select select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    background-color: black;
+    color: rgb(181, 15, 15);
+  }
+  
+  .episodes-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Scrollable flex container */
+    padding-bottom: 10px;
+  }
+  
+  .episode-card {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly opaque background */
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .episode-card img {
+    width: 100%;
+    height: 120px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images are not distorted */
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .episode-info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .episode-info p {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  /* Scrollbar styling */
+  .episodes-list::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .episodes-list::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 4px;
+  }
+  
+  .episodes-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  

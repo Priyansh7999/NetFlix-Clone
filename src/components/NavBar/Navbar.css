@@ -1,0 +1,144 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    padding: 0.5rem 1.5rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar-left img {
+    width: 7rem;
+    cursor: pointer;
+  }
+  
+  .mobile-menu-btn {
+    display: none; /* Hidden on desktop */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar .nav-links ul li {
+    margin: 0 1rem;
+  }
+  
+  .navbar .nav-links ul li button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.623);
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .navbar .nav-links ul li button.active {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links ul li button:hover {
+    color: white;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Profile dropdown styling */
+  .profile {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .profile-dropdown p {
+    margin: 0;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown p:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block; /* Show menu button on mobile */
+    }
+    .navbar-left{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+  
+    .nav-links {
+      display: none; /* Hidden by default */
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: black;
+      width: 100%;
+      padding: 1rem;
+      z-index: 999;
+    }
+  
+    .nav-links.mobile-visible {
+      display: flex; /* Show menu when toggled */
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar .nav-links ul li {
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+  
+    .navbar-right {
+      display: flex; 
+    }
+  }
+  

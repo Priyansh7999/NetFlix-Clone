@@ -1,0 +1,46 @@
+.watch-show {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text */
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  
+  .watch-show h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .dropdown label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    outline: none;
+    background-color: black;
+    color: rgb(150, 27, 27);
+  }
+  
+  .video-container {
+    margin-top: 20px;
+    text-align: center;
+  }
