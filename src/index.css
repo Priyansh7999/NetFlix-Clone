@@ -7,9 +7,6 @@
 }
 body{
   background: rgba(0, 0, 0, 0.921);
-  background: url(./assets/bg.png);
-  background-size: 100% 100%;
-  background-position: center;
   overflow-x: hidden;
   color: white;
 }
