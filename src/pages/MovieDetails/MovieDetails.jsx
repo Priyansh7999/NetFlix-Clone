@@ -56,20 +56,6 @@ export default function MovieDetails() {
         <p><span>Language : </span>{movie?.spoken_languages?.map((language)=>language.name+"  ")}</p>
       </div>
       </div>
-      {/* <div className='movie-cards'>
-        <h2>{movie?.title}</h2>
-        <div className='year-certficate-genre'>
-          <p>{movie?.release_date} | </p>
-          <p>{movie?.popularity} | </p>
-          <p>{movie?.genres?.map((genre)=>genre.name+"  ")}</p>
-        </div>
-        <p><span>Tagline : </span>{movie?.tagline}</p>
-        <p><span>Overview : </span>{movie?.overview}</p>
-        <p><span>Runtime : </span>{movie?.runtime} min</p>
-        <p><span>Production Company : </span>{movie?.production_companies?.map((company)=>company.name+"  ")}</p>
-        <p><span>Production Country : </span>{movie?.production_countries?.map((country)=>country.name+"  ")}</p>
-        <p><span>Language : </span>{movie?.spoken_languages?.map((language)=>language.name+"  ")}</p>
-      </div> */}
       <div className='cast-list'>
         <CastList id={movieId} type="movie"/>
       </div>

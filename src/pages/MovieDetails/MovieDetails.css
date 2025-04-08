@@ -14,16 +14,18 @@
 }
 .movie-details .header .header-image img{
   border-radius: 20px;
-  height: 40rem;
+  height: 35rem;
 }
 
 .movie-cards {
     background-color: #807d7d31; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 20px; 
-    /* margin-right: 30px; */
+    padding: 20px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .movie-cards h2 {
     font-size: 1.8em; 
@@ -35,7 +37,7 @@
 .movie-cards .year-certficate-genre {
     display: flex; 
     flex-wrap: wrap; 
-    gap: 10px;
+    gap: 2rem;
     font-size: 0.9em; 
     color: #ffffffe2; 
     margin-bottom: 15px; 
@@ -55,6 +57,9 @@
   .movie-cards p span {
     font-weight: bold; 
     color: #f43434;
+    font-size: 1.1rem;
+    height: 2rem;
+    width: 5rem;
   }
   
   .movie-cards .runtime {
