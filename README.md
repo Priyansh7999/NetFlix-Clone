@@ -12,7 +12,6 @@ A fully functional Netflix streaming platform clone that replicates the core str
 - **Watchlist Management**: Add/remove movies from personal watchlist
 - **Movie Streaming**: Full-length movie streaming capabilities
 - **Search Functionality**: Advanced search with filters and suggestions
-- **User Authentication**: Secure login and registration system
 
 ### 🎨 Netflix-Inspired UI/UX
 - **Authentic Design**: Pixel-perfect Netflix interface replication
